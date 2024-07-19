@@ -1,0 +1,28 @@
+* {
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    font-size: 30px;
+    text-align: center;
+}
+
+.Images {
+    display: flex;
+    max-height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+    
+.Images .rightSideImg {
+    width: 20px;
+}
+button {
+    color:black;
+}
