@@ -15,28 +15,49 @@
     </div>
     <div class="container text-center">
         <div class="row">
-            <div class="col">
+            <label for="zone-select" class="col">
               Choose USDA Zone
-            </div>
-            <div class="col">
+            <select name="zones" id="zoneSelect">
+                <option value="">--Please Choose a Zone</option>
+                <option value="2">Zone 2</option>
+                <option value="3">Zone 3</option>
+                <option value="4">Zone 4</option>
+                <option value="5">Zone 5</option>
+                <option value="6">Zone 6</option>
+                <option value="7">Zone 7</option>
+                <option value="8">Zone 8</option>
+                <option value="9">Zone 9</option>
+                <option value="10">Zone 10</option>
+                <option value="11">Zone 11</option>
+                <option value="12">Zone 12</option>
+            </select>
+        </label>
+
+            <label class="col">
               Choose a plant
-            </div>
+              <select name="plants" id="plantSelect">
+                <option value="">--Please Choose a Plant</option>
+            </select>
+            </label>
             <div class="col">
                 <ul>
-                    <li>Ideal planting month: </li>
-                    <li>Days to maturity: </li>
-                    <li>Annual or perennial: </li>
-                    <li>Sun exposure: </li>
-                    <li>More info: </li>
+                    <li id="plantName">Plant: </li>
+                    <li id = "plantingMonth">Ideal planting month: </li>
+                    <li id = "daysToMaturity">Days to maturity: </li>
+                    <li id = "annualOrPer">Annual or perennial: </li>
+                    <li id = "sunExposure">Sun exposure: </li>
+                    <li id = "moreInfoLink">More info: </li>
                 </ul>
             </div>
           </div>
     </div>
-    <button class = "submitButton" type = "button">Submit!</button>
+    <div class="container">
+        <button id = "submit">Submit!</button>
+    </div>
     <div>Recently Searched:</div>
     <footer>Made by the coding gardeners🌿
-        <p><small>Contact us! Serious inquiries only</small></p>
-        <small>Disclaimer: Most of this information is made up, do not actually use</small>
+        <p>Contact us! Serious inquiries only</p>
+        <p>Disclaimer: Most of this information is made up, do not actually use</p>    
     </footer>
     <script src="script.js"></script>
 </body>
