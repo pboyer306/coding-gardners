@@ -8,6 +8,13 @@
     <title>Coding gardeners🌿</title>
 </head>
 <body class="p-3 mb-2 bg-success">
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Welcome to our website!</h2>
+          <p>Please select your zone first followed by your desired plant.</p>
+        </div>
+      </div> 
     <header>Western US Gardening Guide</header>
     <div class = "Images">
         <img class = "leftSideImg" src="./Images/download.jpg" alt="">
@@ -17,7 +24,7 @@
         <div class="row">
             <label for="zone-select" class="col">
               Choose USDA Zone
-            <select name="zones" id="zoneSelect">
+            <select name="zones" class = "select" id="zoneSelect">
                 <option value="">--Please Choose a Zone</option>
                 <option value="2">Zone 2</option>
                 <option value="3">Zone 3</option>
@@ -32,10 +39,12 @@
                 <option value="12">Zone 12</option>
             </select>
         </label>
-
+            <div class = "mapContainer">
+                <img class = "usdaZoneMap" src = "Images/x450p-usda-zonemap-298x300.jpg.pagespeed.ic.LyQLiK0K-h.jpg" alt="">
+            </div>
             <label class="col">
               Choose a plant
-              <select name="plants" id="plantSelect">
+              <select name="plants" class = "select" id="plantSelect">
                 <option value="">--Please Choose a Plant</option>
             </select>
             </label>
@@ -54,7 +63,7 @@
     <div class="container">
         <button id = "submit">Submit!</button>
     </div>
-    <div>Recently Searched:</div>
+    <div id = "recentlySearched">Recently Searched:</div>
     <footer>Made by the coding gardeners🌿
         <p>Contact us! Serious inquiries only</p>
         <p>Disclaimer: Most of this information is made up, do not actually use</p>    
