@@ -268,3 +268,22 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 
+const image = document.querySelector('.usdaZoneMap');
+const lens = document.querySelector('.zoomLens');
+
+image.addEventListener('mousemove', function(event) {
+    const x = e.offsetX - lens.offsetWidth / 2;
+    const y = e.offsetY - lens.offsetHeight / 2;
+
+    lens.style.display = 'block';
+    lens.style.left = x + 'px';
+    lens.style.top = y + 'px';
+
+    lens.style.backgroundImage = `url('${image.src}')`;
+    lens.style.backgroundSize = `${image.width * 2}px ${image.height * 2}px`;
+    lens.style.backgroundPosition = `-${x * 2}px -${y * 2}px`;
+});
+
+image.addEventListener('mouseleave', function() {
+    lens.style.display = 'none';
+});

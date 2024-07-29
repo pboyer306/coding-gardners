@@ -30,7 +30,7 @@ button {
     color:black;
     display: flex;
     justify-content: center;
-    margin-left: 48%;
+    margin-left: 58%;
     
 }
 .container {
@@ -38,11 +38,14 @@ button {
     position: center; 
   }
 
-.mapContainer {
-    width: 20%;
-}
-.usdaZoneMap {
-    height: 20%;
+
+
+.zoom-lens {
+    position: absolute;
+    border: 2px solid black;
+    width: 100px; /* Adjust the size of the lens */
+    height: 100px; /* Adjust the size of the lens */
+    display: none;
 }
 
 
@@ -99,6 +102,27 @@ button {
 
 .select {
     color: black;
+}
+
+.mapContainer {
+    width: 20%;
+    position: relative;
+    
+}
+
+.mapContainer img{
+transition: transform 0.5s;
+}
+
+
+.mapContainer img:hover {
+    transform: scale(2);
+}
+
+.usdaZoneMap {
+    height: 100%;
+    width: 100%;
+
 }
 
 option {
